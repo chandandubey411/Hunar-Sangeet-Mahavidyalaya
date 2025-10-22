@@ -30,7 +30,7 @@ const Navbar = () => {
     }`;
 
   return (
-    <header className="bg-gradient-to-r from-pink-500 via-purple-600 to-cyan-400 text-white z-50 shadow-lg fixed top-0">
+    <header className="bg-gradient-to-r from-pink-500 via-purple-600 to-cyan-400 text-white z-50 shadow-lg fixed top-0 w-full">
       <div className="container mx-auto flex justify-between items-center px-6 py-4">
         {/* Logo & Title */}
         <NavLink to="/" className="flex items-center gap-2 md:gap-4">
