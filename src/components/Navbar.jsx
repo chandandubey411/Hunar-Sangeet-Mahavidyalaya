@@ -37,7 +37,7 @@ const Navbar = () => {
             <img
             src={logo}
             alt="Hunar Sangeet Mahavidyalaya logo"
-            className="h-16 w-16 object-cover border-2 border-golden rounded-full"
+            className="h-16 w-24 md:w-16 md:object-cover md:border-2 md:border-golden rounded-full"
             />
           </div>
           <h1 className="text-2xl font-extrabold tracking-tight">
