@@ -9,27 +9,30 @@ export default function TimingandLocation() {
         <title>Timing & Location | Hunar Sangeet Mahavidyalaya - Surya Nagar</title>
         <meta
           name="description"
-          content="View operating hours and location details for Hunar Sangeet Mahavidyalaya, Vasant Kunj, the hub for music, dance, and fine arts education."
+          content="View operating hours and location details for Hunar Sangeet Mahavidyalaya, [translate:Surya Nagar], the hub for music, dance, and fine arts education."
         />
-        <meta name="keywords" content="Music school timing, operating hours, location, Vasant Kunj, contact, address" />
+        <meta
+          name="keywords"
+          content="Music school timing, operating hours, location, [translate:Surya Nagar], contact, address"
+        />
       </Helmet>
 
-      <section className="bg-beige text-charcoal min-h-screen px-6 py-12">
-        <div className="container mx-auto max-w-4xl">
-          <h1 className="text-maroon text-4xl font-extrabold mb-10 text-center">
+      <section className="min-h-screen px-3 md:px-6 py-12 bg-gradient-to-br from-[#FF4FA0] via-[#8C52FF] to-[#43C6DB] text-white flex flex-col pt-[120px]">
+        <div className="container mx-auto max-w-4xl bg-black bg-opacity-70 rounded-lg shadow-xl p-4 md:p-8 backdrop-blur-md">
+          <h1 className="text-4xl font-extrabold mb-10 text-center drop-shadow-lg">
             Timing & Location
           </h1>
 
           {/* Timing */}
-          <div className="bg-white rounded-lg shadow-md p-8 mb-12 max-w-md mx-auto">
-            <h2 className="text-3xl font-semibold mb-6 text-maroon text-center">
+          <div className="bg-white bg-opacity-10 rounded-lg shadow-md p-8 mb-12 max-w-md mx-auto text-white/90">
+            <h2 className="text-3xl font-semibold mb-6 text-center drop-shadow">
               Operating Hours
             </h2>
             <table className="w-full text-center border-collapse">
               <tbody>
-                <tr className="border-b border-gray-300">
+                <tr className="border-b border-white/30">
                   <td className="py-3 font-semibold">Monday</td>
-                  <td className="py-3 text-gray-700">Closed</td>
+                  <td className="py-3">Closed</td>
                 </tr>
                 {[
                   "Tuesday",
@@ -39,9 +42,9 @@ export default function TimingandLocation() {
                   "Saturday",
                   "Sunday",
                 ].map((day) => (
-                  <tr key={day} className="border-b border-gray-300">
+                  <tr key={day} className="border-b border-white/30">
                     <td className="py-3 font-semibold">{day}</td>
-                    <td className="py-3 text-gray-700">11 AM - 8 PM</td>
+                    <td className="py-3">11 AM - 8 PM</td>
                   </tr>
                 ))}
               </tbody>
@@ -49,14 +52,16 @@ export default function TimingandLocation() {
           </div>
 
           {/* Location */}
-          <div className="bg-white rounded-lg shadow-md p-4 md:p-8 max-w-4xl mx-auto">
-            <h2 className="text-3xl font-semibold mb-6 text-maroon text-center">
+          <div className="bg-white bg-opacity-10 rounded-lg shadow-md p-4 md:p-8 max-w-4xl mx-auto text-white/90">
+            <h2 className="text-3xl font-semibold mb-6 text-center drop-shadow">
               Find Us
             </h2>
             <address className="not-italic text-center text-lg leading-relaxed mb-6">
-              B11, behind Sleepwell, near Hotel Sunshine Park,<br/> 
-              Rampuri, Chander Nagar, Surya Nagar,<br/> 
-              Ghaziabad, Uttar Pradesh 201011
+              B11, behind [translate:Sleepwell], near [translate:Hotel Sunshine Park],
+              <br />
+              [translate:Rampuri], [translate:Chander Nagar], [translate:Surya Nagar],
+              <br />
+              [translate:Ghaziabad], [translate:Uttar Pradesh] 201011
             </address>
             <div className="rounded-lg overflow-hidden shadow-lg h-96">
               <iframe
@@ -66,13 +71,12 @@ export default function TimingandLocation() {
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen=""
-                // loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
           </div>
         </div>
-        <FloatingContactMenu/>
+        <FloatingContactMenu />
       </section>
     </>
   );

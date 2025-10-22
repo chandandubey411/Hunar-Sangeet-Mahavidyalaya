@@ -9,21 +9,21 @@ export default function AboutUs() {
         <title>About Us | Hunar Sangeet Mahavidyalaya - Surya Nagar</title>
         <meta
           name="description"
-          content="Learn about Hunar Sangeet Mahavidyalaya, Vasant Kunj – our mission to nurture creativity and talent in music, dance, and fine arts through expert faculty and modern teaching methods."
+          content="Learn about Hunar Sangeet Mahavidyalaya, Surya Nagar – our mission to nurture creativity and talent in music, dance, and fine arts through expert faculty and modern teaching methods."
         />
         <meta
           name="keywords"
-          content="Music school about, dance academy, fine arts education, Indian classical music teaching, Kathak school, Vasant Kunj music school"
+          content="Music school about, dance academy, fine arts education, Indian classical music teaching, Kathak school, Surya Nagar music school"
         />
       </Helmet>
-      <section className="bg-beige text-charcoal min-h-screen px-6 py-12">
-        <div className="container mx-auto max-w-5xl">
-          <h1 className="text-maroon text-4xl font-extrabold mb-10 text-center">
+      <section className="min-h-screen px-6 py-12 bg-gradient-to-br from-[#FF4FA0] via-[#8C52FF] to-[#43C6DB] flex items-center justify-center pt-[120px]">
+        <div className="container mx-auto max-w-5xl bg-black bg-opacity-70 rounded-2xl shadow-2xl p-5 md:p-10 text-white backdrop-blur-lg">
+          <h1 className="font-extrabold text-4xl md:text-5xl pb-2 mb-10 text-center bg-gradient-to-r from-[#FF4FA0] via-[#8C52FF] to-[#43C6DB] bg-clip-text text-transparent drop-shadow">
             About Hunar Sangeet Mahavidyalaya
           </h1>
           <div className="space-y-8 text-lg leading-relaxed">
             <p>
-              Hunar Sangeet Mahavidyalaya – Vasant Kunj is dedicated to nurturing talent, inspiring creativity, and celebrating the rich heritage of music, dance, and fine arts. Guided by experienced and passionate faculty, we blend traditional training with modern teaching methods to help students build confidence, discipline, and self-expression.
+              Hunar Sangeet Mahavidyalaya – Surya Nagar is dedicated to nurturing talent, inspiring creativity, and celebrating the rich heritage of music, dance, and fine arts. Guided by experienced and passionate faculty, we blend traditional training with modern teaching methods to help students build confidence, discipline, and self-expression.
             </p>
             <p>
               We offer expert training in Indian Classical Music, Kathak/Bharatnatyam, Western/Bollywood Dance, Guitar, Keyboard, Tabla, Dholak, Harmonium, Flute, and Fine Arts. Our structured programs and personalized attention create an environment where every student can grow artistically, whether they are beginners or advanced learners.

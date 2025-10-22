@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/Images/logo.png"; // Replace with your logo path
+import logo from "../assets/Images/logo.png";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
@@ -22,15 +22,17 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-maroon text-beige py-10">
+    <footer className="bg-gradient-to-r from-[#FF4FA0] via-[#8C52FF] to-[#43C6DB] text-white py-10">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
         <div className="flex items-center mb-6 md:mb-0">
           <img
             src={logo}
             alt="Hunar Sangeet Mahavidyalaya logo"
-            className="h-16 w-16 rounded-full border-2 border-golden object-cover mr-4"
+            className="h-16 w-16 rounded-full border-4 border-white shadow-lg object-cover mr-4"
           />
-          <span className="text-xl font-bold tracking-wide">Hunar Sangeet Mahavidyalaya</span>
+          <span className="text-xl font-bold tracking-wide drop-shadow-lg">
+            Hunar Sangeet Mahavidyalaya
+          </span>
         </div>
 
         <nav className="flex flex-wrap justify-center gap-6 mb-6 md:mb-0">
@@ -38,21 +40,21 @@ export default function Footer() {
             <Link
               key={to}
               to={to}
-              className="hover:text-golden transition font-semibold"
+              className="hover:text-yellow-300 transition font-semibold"
             >
               {label}
             </Link>
           ))}
         </nav>
 
-        <div className="flex space-x-6 text-2xl">
+        <div className="flex space-x-6 text-2xl drop-shadow-lg">
           {socialLinks.map(({ href, icon }, idx) => (
             <a
               key={idx}
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-golden transition"
+              className="hover:text-yellow-300 transition"
               aria-label={`Link to Hunar Sangeet on ${href.split('.')[1]}`}
             >
               {icon}
@@ -61,7 +63,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mt-8 text-center text-sm text-beige/70">
+      <div className="mt-8 text-center text-sm text-white/70">
         © 2025 Hunar Sangeet Mahavidyalaya - Surya Nagar. All rights reserved.
       </div>
     </footer>

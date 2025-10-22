@@ -40,30 +40,33 @@ export default function Courses() {
         <title>Courses | Hunar Sangeet Mahavidyalaya - Surya Nagar</title>
         <meta
           name="description"
-          content="Explore a wide range of music, dance, and fine arts courses at Hunar Sangeet Mahavidyalaya Vasant Kunj. Classes for all ages and skill levels."
+          content="Explore a wide range of music, dance, and fine arts courses at Hunar Sangeet Mahavidyalaya Surya Nagar. Classes for all ages and skill levels."
         />
-        <meta name="keywords" content="Music courses, Dance classes, Fine arts, Kathak, Bharatnatyam, Guitar lessons, Tabla training, Vasant Kunj" />
+        <meta
+          name="keywords"
+          content="Music courses, Dance classes, Fine arts, Kathak, Bharatnatyam, Guitar lessons, Tabla training, Surya Nagar"
+        />
       </Helmet>
-      <section className="bg-beige text-charcoal min-h-screen px-6 py-12">
+      <section className="min-h-screen px-6 py-12 bg-gradient-to-br from-[#FF4FA0] via-[#8C52FF] to-[#43C6DB] text-white pt-[120px]">
         <div className="container mx-auto max-w-5xl">
-          <h1 className="text-maroon font-extrabold text-4xl mb-10 text-center">
+          <h1 className="font-extrabold text-4xl mb-10 text-center drop-shadow-lg">
             Our Courses
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {coursesList.map(({ title, description }) => (
               <article
                 key={title}
-                className="border-2 border-maroon rounded-lg p-6 shadow-lg hover:shadow-xl transition"
+                className="bg-black bg-opacity-60 rounded-xl p-6 shadow-2xl backdrop-blur-md hover:shadow-4xl transition-shadow duration-300 cursor-default"
               >
-                <h2 className="text-2xl font-semibold text-maroon mb-3">
+                <h2 className="text-2xl font-semibold mb-3 bg-gradient-to-r from-[#FF4FA0] via-[#8C52FF] to-[#43C6DB] bg-clip-text text-transparent drop-shadow-md">
                   {title}
                 </h2>
-                <p className="text-charcoal text-base">{description}</p>
+                <p className="text-white/90 text-base">{description}</p>
               </article>
             ))}
           </div>
         </div>
-        <FloatingContactMenu/>
+        <FloatingContactMenu />
       </section>
     </>
   );
