@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import FloatingContactMenu from "./FloatingContactMenu";
-
+import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <>
@@ -23,13 +23,12 @@ export default function Home() {
           <p className="mb-10 max-w-3xl mx-auto text-xl md:text-2xl font-medium tracking-wide leading-relaxed text-white/90">
             Dedicated to nurturing talent, inspiring creativity, and celebrating the rich heritage of music, dance, and fine arts. Join our expert faculty to build confidence, discipline, and artistic expression.
           </p>
-          <a
-            href="/contactUs"
-            className="inline-block bg-[#FF4FA0] text-white font-extrabold text-lg px-4 py-2 rounded-full shadow-xl hover:bg-[#8C52FF] hover:scale-105 transition-transform duration-300 ease-in-out"
-            aria-label="Book your free demo class"
+          <Link to={'/contactUs'}
+                className="inline-block bg-[#FF4FA0] text-white font-extrabold text-lg px-4 py-2 rounded-full shadow-xl hover:bg-[#8C52FF] hover:scale-105 transition-transform duration-300 ease-in-out"
+                aria-label="Book your free demo class"
           >
-            Book Your Free Demo Class
-          </a>
+               Book Your Free Demo Class
+          </Link>
         </div>
 
         <div className="mt-20 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
